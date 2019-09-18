@@ -1,2 +1,26 @@
+/*! monk.css v0.0.1 | MIT License | github.com/matthijskamstra/monk-style */
+/**
+ * Minimal css reset
+ */
+html {
+  box-sizing: border-box;
+  font-size: 16px; }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtb25rLmNzcyJ9 */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+img, iframe {
+  border: 0; }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9tb25rLnNjc3MiLCIuLi8uLi9zcmMvX3Jlc2V0LnNjc3MiLCJtb25rLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFJQSwyRUFBQTtBQ0pBOztFQ0dFO0FEQUY7RUFDQyxzQkFBc0I7RUFDdEIsZUFBZSxFQUFBOztBQUdoQjtFQUNDLG1CQUFtQixFQUFBOztBQUdwQjtFQUNDLFNBQVM7RUFDVCxVQUFVO0VBQ1YsbUJBQW1CLEVBQUE7O0FBR3BCO0VBQ0MsZ0JBQWdCLEVBQUE7O0FBR2pCO0VBQ0MsZUFBZTtFQUNmLFlBQVksRUFBQTs7QUFHYjtFQUFjLFNBQVUsRUFBQSIsImZpbGUiOiJtb25rLmNzcyJ9 */

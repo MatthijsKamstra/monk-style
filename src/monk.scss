@@ -1,9 +1,10 @@
 // Variables and mixins
 @import "variables";
-// @import "mixins";
+@import "mixins";
 
-// /*! Spectre.css v#{$version} | MIT License | github.com/picturepan2/spectre */
-// // Reset and dependencies
+/*! monk.css v#{$version} | MIT License | github.com/matthijskamstra/monk-style */
+// Reset and dependencies
+@import "reset";
 // @import "normalize";
 // @import "base";
 
