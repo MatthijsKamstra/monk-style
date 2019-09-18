@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "monk.css",
+	"sources": [
+		"../../src/monk.scss",
+		"../../src/_variables.scss"
+	],
+	"names": [],
+	"mappings": ""
+}
