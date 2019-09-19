@@ -1,4 +1,4 @@
-# monk-style
+# monkee-style
 
 I need a dropin minimal css framework just to do a quick fix in existing projects.
 
