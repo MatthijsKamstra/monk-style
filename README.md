@@ -24,10 +24,10 @@ and whatever I in the future add
 
 the following examples:
 
+- https://github.com/milligram/milligram
 - https://github.com/ajusa/lit
 - https://github.com/picturepan2/spectre
 - https://github.com/getbase/base
-- https://github.com/milligram/milligram
 - https://github.com/Chalarangelo/mini.css
 - https://github.com/twbs/bootstrap
 
