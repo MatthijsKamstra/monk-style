@@ -12,7 +12,8 @@
     "dev": "npm-run-all -p sass:*"
   },
   "keywords": [
-    "css"
+    "css",
+    "minimal"
   ],
   "author": "Matthijs Kamstra aka [mck]",
   "license": "MIT",
