@@ -4,6 +4,9 @@
 
 /*! monk.css v#{$version} | MIT License | github.com/matthijskamstra/monk-style */
 
-// Layout
-@import "layout";
-@import "grid";
+// Reset and dependencies
+@import "minireset";
+
+// Elements
+@import "typebase";
+
