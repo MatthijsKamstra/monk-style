@@ -2,7 +2,11 @@
 
 ![](icon.png)
 
-I ❤ [Bootstrap](https://getbootstrap.com/), so I use it for all frontend project I do.
+I ❤ [Bootstrap](https://getbootstrap.com/) I use it for all the frontend project I do.
+
+The most important reason for this is: it's been tested (a lot) and most common problems are fixed in Bootstrap.
+
+If something doesn't work
 
 So when "someone" starts with a I-am-a-frontend-developer-and-I-never-use-a-framework-bullshit.css, I quickly miss stuff that I need.
 
@@ -28,9 +32,20 @@ and whatever I in the future add
 
 
 - https://medium.com/codyhouse/create-your-design-system-part-1-typography-7c630d9092bd
+- https://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984
 
 
 
+## not included in library
+
+I am not forcing you to use them, but you can add them and they will work
+
+```html
+<!-- Source® Sans Pro, Adobe's first open source typeface family, was designed by Paul D. Hunt. -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap" rel="stylesheet">
+<!-- Ficons, A Simple, Open-Source, Drop-In Alternative for Font Awesome Icons  -->
+<link href="https://cdn.jsdelivr.net/npm/ficons@1.1.52/dist/ficons/font.css" rel="stylesheet">
+```
 
 ## Based on
 
