@@ -5,8 +5,7 @@
 /*! monk.css v#{$version} | MIT License | github.com/matthijskamstra/monk-style */
 // Reset and dependencies
 @import "minireset";
-// @import "normalize";
-// @import "base";
+@import "base";
 
 // Elements
 // @import "typography";
@@ -18,8 +17,7 @@
 // Layout
 @import "layout";
 @import "grid";
-// @import "hero";
-// @import "navbar";
+@import "hero";
 
 // Components
 // @import "badges";
