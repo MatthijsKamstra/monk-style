@@ -5,10 +5,12 @@
 I ❤ [Bootstrap](https://getbootstrap.com/) I use it for all the frontend project I do.
 
 The most important reason for this is: it's been tested (a lot) and most common problems are fixed in Bootstrap.
+Smarter people have collected the most effective way to build a framework.
 
-If something doesn't work
+If something doesn't work, I probably did something wrong! And that makes it much easier to figure out where the bugs are.
 
-So when "someone" starts with a I-am-a-frontend-developer-and-I-never-use-a-framework-bullshit.css, I quickly miss stuff that I need.
+
+So when "someone" starts with a `I-am-a-frontend-developer-and-I-never-use-a-framework-bullshit.css`, I sometimes miss stuff that I need.
 
 In this case I missed a grid. I wanted to copy paste something quick, but I noticed that I really don't know anything about flexbox. This is a great opportunity to find out.
 
