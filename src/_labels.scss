@@ -1,37 +1,67 @@
-
 // https://github.com/picturepan2/spectre/blob/master/src/_labels.scss
 
 // Labels
 .label {
-  // @include label-base();
+  border-radius: $border-radius;
+  line-height: 1.25;
+  padding: 0.1rem 0.2rem;
   // @include label-variant(lighten($body-font-color, 5%), $bg-color-dark);
+
   display: inline-block;
 
   // Label rounded
   &.label-rounded {
     border-radius: 5rem;
-    padding-left: .4rem;
-    padding-right: .4rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
   }
 
   // Label colors
   &.label-primary {
-    // @include label-variant($light-color, $primary-color);
+    background: $primary-color;
+    color: $light-color;
   }
 
   &.label-secondary {
-    // @include label-variant($primary-color, $secondary-color);
+    // @include label-variant(, );
+    background: $secondary-color;
+    color: $primary-color;
   }
 
   &.label-success {
-    // @include label-variant($light-color, $success-color);
+    // @include label-variant(, );
+    background: $success-color;
+    color: $light-color;
   }
 
   &.label-warning {
-    // @include label-variant($light-color, $warning-color);
+    background: $warning-color;
+    color: $light-color;
   }
 
   &.label-error {
-    // @include label-variant($light-color, $error-color);
+    background: $error-color;
+    color: $light-color;
   }
+}
+
+.label {
+  font-size: calc-em(13px);
+  color: $color-white;
+  background-color: $color-info;
+  font-weight: bold;
+  padding: calc-em(4px) calc-em(8px);
+  border-radius: calc-em(1px);
+}
+
+.label-success {
+  background-color: $color-success;
+}
+
+.label-danger {
+  background-color: $color-danger;
+}
+
+.label-warning {
+  background-color: $color-warning;
 }
