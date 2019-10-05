@@ -1,5 +1,11 @@
 // https://github.com/picturepan2/spectre/blob/master/src/_base.scss
 // Base
+
+:root {
+  --custom-body-family: $monkee-font-family:;
+  --main-bg-color: coral;
+}
+
 *,
 *::before,
 *::after {
@@ -15,6 +21,8 @@ html {
 
 body {
   background: $body-bg;
+  // background: v(main-bg-color);
+  // background: var(--main-bg-color);
   color: $body-font-color;
   font-family: $body-font-family;
   font-size: $font-size;
