@@ -1,4 +1,4 @@
-# monkee-style
+# monkee-style 🐵
 
 ![](icon.png)
 
