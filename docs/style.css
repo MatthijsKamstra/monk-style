@@ -1,0 +1,36 @@
+body {
+  background-color: #f8f8f8;
+}
+
+.monkee-example {
+  border-left: none;
+  border-radius: 0;
+  border-right: none;
+  padding: 0;
+
+  border-top: 2px solid #f5f5f5;
+  border-bottom: 2px solid #f5f5f5;
+  position: relative;
+}
+
+.monkee-example::before {
+  background: #ffdd57;
+  border-radius: 2px 2px 0 0;
+  bottom: 100%;
+  color: rgba(0, 0, 0, 0.7);
+  content: "Example";
+  display: inline-block;
+  font-size: 0.4rem;
+  font-weight: 700;
+  left: -1px;
+  letter-spacing: 1px;
+  margin-left: -1px;
+  padding: 3px 5px;
+  position: absolute;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+
+.monkee-example section {
+  margin-bottom: 20px;
+}
