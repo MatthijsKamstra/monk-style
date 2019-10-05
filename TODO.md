@@ -5,19 +5,75 @@
 
 
 
+```html
+<link href="https://fonts.googleapis.com/css?family=Alegreya:400,700|Source+Sans+Pro:300,400,700&display=swap" rel="stylesheet">
+```
+
+
+```css
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Alegreya', serif;
+```
+
+
+
+
+
+
+
 ### templates
 
 - For html example: GitHub - [mrmrs/html: HTML blocks](https://github.com/mrmrs/html)
 - For dropin markdown css - [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 
-##
+## utils
 
 - https://github.com/Chalarangelo/mini.css/tree/master/dist
-
 - https://github.com/claviska/shoelace-css/blob/master/source/css/utilities.css
-
 - https://github.com/smakosh/unnamed-css-framework/blob/master/sass/buttons.scss
+
+
+### hero
+
+Hero | Bulma: Free, open source, & modern CSS framework based on Flexbox
+
+[https://bulma.io/documentation/layout/hero/]
+
+
+How To Create a Hero Image
+
+[https://www.w3schools.com/howto/howto_css_hero_image.asp]
+
+herocss
+
+[https://www.herocss.com/documentation]
+
+
+
+# gradients
+
+
+GRADIENTS
+
+[http://mrmrs.io/gradients/]
+
+
+GitHub - mrmrs/gradients: Gradients!
+
+[https://github.com/mrmrs/gradients]
+
+
+
+### debug
+
+GitHub - chrisnager/simple-debug.css: Debug your layouts with one line of CSS
+
+[https://github.com/chrisnager/simple-debug.css/]
+
+debug-css/debug.css at master · nternetinspired/debug-css · GitHub
+
+[https://github.com/nternetinspired/debug-css/blob/master/debug.css]
 
 
 ### elements
