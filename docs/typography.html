@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Monkee 🐵 - Library</title>
+	<!-- Source® Sans Pro, Adobe's first open source typeface family, was designed by Paul D. Hunt. -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap" rel="stylesheet">
+	<!-- Ficons, A Simple, Open-Source, Drop-In Alternative for Font Awesome Icons  -->
+	<link href="https://cdn.jsdelivr.net/npm/ficons@1.1.52/dist/ficons/font.css" rel="stylesheet">
+	<!-- Link to your stylesheet here -->
+	<!--
+	<link rel="stylesheet" href="../dist/monkee.typebase.css">
+	<link rel="stylesheet" href="../dist/monkee.grid.css">
+	 -->
+	<link rel="stylesheet" href="../dist/monkee.css">
+	<!-- style.css not really important, but it helps to visualize this page -->
+	<link rel="stylesheet" href="style.css">
+	<style>
+	</style>
+</head>
+
+<body>
+</body>
+<div class="hero gradient-purple dark" style="background-image: url('https://placeimg.com/1600/480/nature')">
+	<h1>Typography</h1>
+</div>
+
+<div class="container">
+	<p>Typography sets default styles for headings, paragraphs, semantic text, blockquote and lists elements.</p>
+	<h1>Headings</h1>
+
+	<div class="docs-demo columns">
+		<div class="column col-12">
+			<h1>H1 Heading <small class="label">40px</small></h1>
+		</div>
+		<div class="column col-12">
+			<h2>H2 Heading <small class="label">32px</small></h2>
+		</div>
+		<div class="column col-12">
+			<h3>H3 Heading <small class="label">28px</small></h3>
+		</div>
+		<div class="column col-12">
+			<h4>H4 Heading <small class="label">24px</small></h4>
+		</div>
+		<div class="column col-12">
+			<h5>H5 Heading <small class="label">20px</small></h5>
+		</div>
+		<div class="column col-12">
+			<h6>H6 Heading <small class="label">16px</small></h6>
+		</div>
+	</div>
+
+	code example
+	<!-- escape `<` with `&lt;`  -->
+	<code><pre>
+&lt;h1>H1 Heading&lt;/h1>
+&lt;h1>H1 Heading &lt;small class="label">40px&lt;/small>&lt;/h1>
+&lt;span class="h1">H1 Heading&lt;/span>
+	</pre></code>
+
+
+	<section>
+
+		<h2>Display headings</h2>
+		<p>
+
+
+			Traditional heading elements are designed to work best in the meat of your page content. When you need a
+			heading
+			to stand out, consider using a display heading—a larger, slightly more opinionated heading style. Keep in
+			mind
+			these headings are not responsive by default, but it’s possible to enable responsive font sizes.
+		</p>
+
+	</section>
+
+	<section class="monkee-examples">
+		<h1 class="display-1">Display 1</h1>
+		<h1 class="display-2">Display 2</h1>
+		<h1 class="display-3">Display 3</h1>
+		<h1 class="display-4">Display 4</h1>
+	</section>
+
+	<!-- escape `<` with `&lt;`  -->
+	<code><pre>
+&lt;h1 class="display-1">Display 1&lt;/h1>
+&lt;h1 class="display-2">Display 2&lt;/h1>
+&lt;h1 class="display-3">Display 3&lt;/h1>
+&lt;h1 class="display-4">Display 4&lt;/h1>
+	</pre></code>
+
+
+	<h2>
+
+		Paragraphs
+	</h2>
+
+
+	<code>
+
+<p>Lorem ipsum dolor sit amet, ...</p>
+<p>...</p>
+
+</code>
+
+
+
+	<div class="docs-demo columns">
+		<div class="column col-6 col-xs-12"><abbr title="Internationalization">I18N</abbr><code class="ml-2">abbr</code>
+		</div>
+		<div class="column col-6 col-xs-12"><strong>Bold</strong><code class="ml-2">strong</code><code
+				class="ml-2">b</code></div>
+		<div class="column col-6 col-xs-12">
+			<cite>Citation</cite><code class="ml-2">cite</code>
+		</div>
+		<div class="column col-6 col-xs-12"><code>Hello World!</code><code class="ml-2">code</code></div>
+		<div class="column col-6 col-xs-12">
+			<del>Deleted</del><code class="ml-2">del</code>
+		</div>
+		<div class="column col-6 col-xs-12"><em>Emphasis</em><code class="ml-2">em</code></div>
+		<div class="column col-6 col-xs-12"><i>Italic</i><code class="ml-2">i</code></div>
+		<div class="column col-6 col-xs-12"><ins>Inserted</ins><code class="ml-2">ins</code></div>
+		<div class="column col-6 col-xs-12"><kbd>Ctrl + S</kbd><code class="ml-2">kbd</code></div>
+		<div class="column col-6 col-xs-12">
+			<mark>Highlighted</mark><code class="ml-2">mark</code>
+		</div>
+		<div class="column col-6 col-xs-12">
+			<ruby>漢
+				<rt>kan</rt>字
+				<rt>ji</rt>
+			</ruby><code class="ml-2">ruby</code>
+		</div>
+		<div class="column col-6 col-xs-12">
+			<s>Strikethrough</s><code class="ml-2">s</code>
+		</div>
+		<div class="column col-6 col-xs-12"><samp>Sample</samp><code class="ml-2">samp</code></div>
+		<div class="column col-6 col-xs-12">Text <sub>Subscripted</sub><code class="ml-2">sub</code></div>
+		<div class="column col-6 col-xs-12">Text <sup>Superscripted</sup><code class="ml-2">sup</code></div>
+		<div class="column col-6 col-xs-12">
+			<time>20:00</time><code class="ml-2">time</code>
+		</div>
+		<div class="column col-6 col-xs-12">
+			<u>Underline</u><code class="ml-2">u</code>
+		</div>
+		<div class="column col-6 col-xs-12">
+			<var>x</var> =
+			<var>y</var> + 2<code class="ml-2">var</code>
+		</div>
+	</div>
+
+	<h2>
+
+		Blockquote
+	</h2>
+
+	<blockquote>
+		<p>The advance of technology is based on making it fit in so that you don't really even notice it, so it's part
+			of everyday life.</p>
+		<cite>- Bill Gates</cite>
+	</blockquote>
+
+</html>
