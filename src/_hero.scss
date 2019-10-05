@@ -6,32 +6,99 @@
 	 -l  = large
 */
 
-
 /*
 	Text that is hidden but accessible
 	Ref: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 */
 
-
 // Hero
 .hero {
+  // center content with flexbox
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 4rem;
+
+  // some padding at top and bottom
+  padding-bottom: 4rem; // (16px * 4)
   padding-top: 4rem;
 
+  // Position and center the image to scale nicely on all screens
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  // ad some margin at the bottom
+  margin-bottom: 1rem;
+
+  .hero-body {
+    border: 1px solid pink;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: $layout-spacing;
+  }
+
+  &.background-image-dark {
+    // filter: grayscale(100%);
+    // filter: opacity(25%);
+    // filter: brightness(0.4);
+    // background-blend-mode: saturation;
+    background-blend-mode: multiply;
+  }
+
+  // colors
+  &.primary,
+  &.default {
+    background-color: $color-primary;
+  }
+  &.info {
+    background-color: $color-info;
+  }
+  &.success {
+    background-color: $color-success;
+  }
+  &.warning {
+    background-color: $color-warning;
+  }
+  &.danger {
+    background-color: $color-danger;
+  }
+  &.light {
+    background-color: $color-gray-light;
+  }
+  &.gray {
+    color: $color-white;
+    background-color: $color-gray-dark;
+  }
+  &.dark {
+    color: $color-white;
+    background-color: $color-black;
+  }
+
+  // size/height
+  &.medium {
+    min-height: 50vh;
+  }
+  &.large {
+    min-height: 75vh;
+  }
+  &.fullscreen,
+  &.fullheight {
+    min-height: 100vh;
+  }
+
+  // not sure I need this.. bit aight
   &.hero-sm {
-	padding-bottom: 2rem;
-	padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
   }
 
   &.hero-lg {
-	padding-bottom: 8rem;
-	padding-top: 8rem;
-  }
-
-  .hero-body {
-	padding: $layout-spacing;
+    padding-bottom: 8rem;
+    padding-top: 8rem;
   }
 }
