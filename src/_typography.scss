@@ -1,6 +1,4 @@
-
 // font-family: 'Source Sans Pro', sans-serif;
-
 
 /*  =GLOBAL ELEMENTS
 --------------------------------------------------------------
@@ -76,7 +74,6 @@
 //     border-width:1px 0 0 0;
 // }
 
-
 // https://github.com/picturepan2/spectre/blob/master/src/_typography.scss
 
 // Typography
@@ -90,7 +87,7 @@ h6 {
   color: inherit;
   font-weight: 500;
   line-height: 1.2;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   margin-top: 0;
 }
 .h1,
@@ -123,7 +120,33 @@ h5,
 }
 h6,
 .h6 {
-  font-size: .8rem;
+  font-size: 0.8rem;
+}
+
+// display
+%display {
+  font-weight: 300;
+  line-height: 1.2;
+}
+.display {
+  @extend %display;
+  font-size: 5.5rem;
+  &-1 {
+    @extend %display;
+    font-size: 5.5rem;
+  }
+  &-2 {
+    @extend %display;
+    font-size: 4.5rem;
+  }
+  &-3 {
+    @extend %display;
+    font-size: 3.5rem;
+  }
+  &-4 {
+    @extend %display;
+    font-size: 3rem;
+  }
 }
 
 // Paragraphs
@@ -145,13 +168,13 @@ abbr[title] {
 }
 
 kbd {
-  @include label-base();
-  @include label-variant($light-color, $dark-color);
+  // @include label-base();
+  // @include label-variant($light-color, $dark-color);
   font-size: $font-size-sm;
 }
 
 mark {
-  @include label-variant($body-font-color, $highlight-color);
+  // @include label-variant($body-font-color, $highlight-color);
   border-bottom: $unit-o solid darken($highlight-color, 15%);
   border-radius: $border-radius;
   padding: $unit-o $unit-h 0;
