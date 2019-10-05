@@ -1,15 +1,16 @@
 // Variables and mixins
 @import "variables";
 @import "mixins";
+@import "root";
 
 /*! #{$project-name}.css v#{$version} | MIT License | github.com/matthijskamstra/monkee-style */
 // Reset and dependencies
 @import "minireset";
 @import "base";
+@import "gradient";
 
 // Elements
-// @import "typography";
-@import "typebase";
+@import "typography";
 @import "buttons";
 @import "labels";
 // @import "media";
@@ -17,9 +18,9 @@
 // Layout
 @import "layout";
 @import "grid";
-@import "hero";
 
 // Components
+@import "hero";
 // @import "badges";
 // @import "cards";
 
