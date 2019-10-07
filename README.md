@@ -30,6 +30,67 @@ But why stop there ..
 
 and whatever I in the future add
 
+
+## About the system
+
+I'm writing down some ideas that should give you an idea what the library is based upon.
+
+- `container` is `px` sized
+- typography is `rem` based
+- not interessted in IE (Internet Explorer)
+- scss and css-vars (I need to think about this stuff)
+- use css-vars to create an easy switch between dark mode?
+- vars for colors (7/9 colors?)
+- ...
+
+**colors**
+
+- default/primary
+- secondary
+- info
+- success
+- warning
+- error
+- light
+- dark
+- black
+- white
+
+
+**elements**
+
+- base
+- root
+- color
+- typography
+- layout
+- grid
+- buttons
+- hero
+
+## basic rules?
+
+height hero (perhaps others as well)
+
+might concider `hero`/`panel` as names
+
+- height-50 (medium)
+- height-75 (large)
+- height-100 (fullscreen)
+
+
+screen widths
+
+default mobile?
+
+
+* -sm = small
+* -md = medium
+* -lg = large
+
+
+
+
 ## fix typography
 
 
