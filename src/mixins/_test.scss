@@ -1,0 +1,4 @@
+// Test mixin
+@mixin test($color) {
+  color: $color;
+}

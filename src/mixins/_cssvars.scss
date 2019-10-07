@@ -1,0 +1,7 @@
+// ____________________________________ getter/setter ____________________________________
+
+// source: https://dev.to/meduzen/write-css-variables-faster-in-scss-1mon
+
+@function v($var) {
+  @return var(--#{$var});
+}
