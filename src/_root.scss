@@ -17,7 +17,7 @@
   --white: #ffffff;
   --silver: #dddddd;
   --gray: #aaaaaa;
-  --black: #111111;
+  --black: #{$color-gray-dark};
 
   // bootstrap
   --blue: #007bff;

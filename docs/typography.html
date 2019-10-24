@@ -22,10 +22,14 @@
 </head>
 
 <body>
+	<!-- it needs to be on top of everything to work -->
+	<input type="checkbox" id="menu-toggle" />
+	<label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
 
-	<div class="hero gradient-purple dark" style="background-image: url('https://placeimg.com/1600/480/nature')">
-		<h1>Monkee Typography</h1>
-	</div>
+	<div class="content-container">
+		<div class="hero gray background-image-dark" style="background-image: url('img/bg/palm2.jpg')">
+			<h1 class="display">Monkee 🐵 Typography</h1>
+		</div>
 
 	<div class="container">
 		<p>Typography sets default styles for headings, paragraphs, semantic text, blockquote and lists elements.</p>
@@ -164,13 +168,13 @@
 			<cite>- Bill Gates</cite>
 		</blockquote>
 
-		<!-- off-canvas navigation -->
-		<input type="checkbox" id="menu-toggle" />
-		<label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
-		<nav id="storage" class="slideout-sidebar" style="display:_none;"></nav>
-		<!-- load navigation -->
-		<script type="text/javascript" src="cc_load.js"></script>
+	</div>
 
+
+	<!-- off-canvas navigation -->
+	<nav id="storage" class="slideout-sidebar" style="display:_none;"></nav>
+	<!-- load navigation -->
+	<script type="text/javascript" src="cc_load.js"></script>
 </body>
 
 </html>

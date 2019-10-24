@@ -5,6 +5,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Monkee 🐵 - Library</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<!-- Source® Sans Pro, Adobe's first open source typeface family, was designed by Paul D. Hunt. -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap" rel="stylesheet" />
 	<!-- Ficons, A Simple, Open-Source, Drop-In Alternative for Font Awesome Icons  -->
@@ -17,34 +18,40 @@
 </head>
 
 <body>
-
-	<div class="content-container">
-	<div class="hero gray background-image-dark" style="background-image: url('https://placeimg.com/1600/480/nature')">
-		<h1 class="display">Monkee Style</h1>
-	</div>
-
-	<section class="container">
-		<h1>Monkee.css</h1>
-		<p>
-			I ❤ <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>,
-			so I use it for all the project I do.
-		</p>
-		<p>
-			So when "someone" starts with a
-			I-am-a-frontend-developer-and-I-never-use-a-framework-bullshit.css, I
-			quickly miss stuff that I need.
-		</p>
-		<p>
-			In this case I missed a grid. I wanted to copy paste something quick,
-			but I noticed that I really don't know anything about flexbox. This is a
-			great opportunity to find out.
-		</p>
-	</section>
-	</div>
-
-	<!-- off-canvas navigation -->
+	<!-- it needs to be on top of everything to work -->
 	<input type="checkbox" id="menu-toggle" />
 	<label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
+
+	<div class="content-container">
+		<div class="hero gray background-image-dark" style="background-image: url('img/bg/palm2.jpg')">
+			<h1 class="display">Monkee 🐵 Style</h1>
+		</div>
+
+		<section class="container">
+			<h1>Monkee.css</h1>
+			<p>
+				I ❤ <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>,
+				so I use it for all the project I do.
+			</p>
+			<p>
+				So when "someone" starts with a
+				I-am-a-frontend-developer-and-I-never-use-a-framework-bullshit.css, I
+				quickly miss stuff that I need.
+			</p>
+			<p>
+				In this case I missed a grid. I wanted to copy paste something quick,
+				but I noticed that I really don't know anything about flexbox. This is
+				a great opportunity to find out.
+			</p>
+		</section>
+
+		<section class="container">
+			<img src="img/monkee_style_logo.svg" alt="Monkee Style Logo" width="440px" height="440px">
+		</section>
+
+	</div><!-- /.content-container -->
+
+	<!-- off-canvas navigation -->
 	<nav id="storage" class="slideout-sidebar" style="display:_none;"></nav>
 	<!-- load navigation -->
 	<script type="text/javascript" src="cc_load.js"></script>

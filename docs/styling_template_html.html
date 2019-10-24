@@ -11,10 +11,10 @@
     <meta name="description" content="Common HTML patterns">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Link to your stylesheet here 
+    <!-- Link to your stylesheet here
     <link rel="stylesheet" href="css/i.css">
 
-    Favicons and Touch Device Icons 
+    Favicons and Touch Device Icons
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="touch-icon-iphone-precomposed.png">
     <link rel="apple-touch-icon" sizes="72x72"   href="touch-icon-ipad-precomposed.png">
@@ -23,7 +23,17 @@
     -->
   </head>
 
-  <body>
+<body>
+	<!-- it needs to be on top of everything to work -->
+	<input type="checkbox" id="menu-toggle" />
+	<label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
+
+	<div class="content-container">
+		<div class="hero gray background-image-dark" style="background-image: url('img/bg/palm2.jpg')">
+			<h1 class="display">Monkee 🐵 Style</h1>
+		</div>
+
+		<section class="container">
 
     <header>
       <h1>HTML</h1>
@@ -461,6 +471,13 @@
         <address>email@email.com</address>
       </footer>
     </section>
-  </body>
+	</div><!-- /.content-containe -->
+
+	<!-- off-canvas navigation -->
+	<nav id="storage" class="slideout-sidebar" style="display:_none;"></nav>
+	<!-- load navigation -->
+	<script type="text/javascript" src="cc_load.js"></script>
+</body>
+
 </html>
 
