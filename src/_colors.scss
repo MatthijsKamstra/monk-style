@@ -334,3 +334,33 @@ $disabled: #c1c1c1;
 .stroke-black {
   stroke: var(--black);
 }
+
+// https://codepen.io/cassie-codes/pen/561304e31eb955362b8d850d7eb7500e
+
+.svg {
+  width: 100%;
+  height: auto;
+}
+
+.svg:hover {
+  cursor: pointer;
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.svg-color {
+  &-red {
+    filter: invert(0.4) sepia(1) saturate(20) hue-rotate(288deg) brightness(1.06);
+  }
+  &-green {
+    filter: invert(0.4) sepia(1) saturate(20) hue-rotate(72deg) brightness(0.97);
+  }
+  &-yellow {
+    filter: invert(0.4) sepia(1) saturate(20) hue-rotate(360deg) brightness(1.2);
+  }
+  &-gray {
+    filter: invert(0.4) sepia(0) saturate(1) hue-rotate(0deg) brightness(1.2);
+  }
+  &-blue {
+    filter: invert(0.4) sepia(1) saturate(20) hue-rotate(154.8deg) brightness(0.97);
+  }
+}
