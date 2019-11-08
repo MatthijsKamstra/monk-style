@@ -1021,7 +1021,8 @@ use `content-container` if you want it the push out the content
   height: 100%;
   padding: 20px;
   background-color: #212121;
-  transition: all 300ms ease-in-out; }
+  transition: all 300ms ease-in-out;
+  overflow: scroll; }
 
 .slideout-sidebar ul {
   list-style: none;
