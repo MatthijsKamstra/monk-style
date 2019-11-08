@@ -8,6 +8,10 @@
 - [ ] https://codepen.io/acarignan/pen/rkFxE
 
 
+
+
+- [ ] fix menu without fa... icon
+
 - colors: https://clrs.cc/
 - button: http://mrmrs.cc/btns/
 
