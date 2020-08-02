@@ -2,17 +2,18 @@
 
 ![](icon.png)
 
-I ❤ [Bootstrap](https://getbootstrap.com/) I use it for all the frontend project I do.
+I ❤ [Bootstrap](https://getbootstrap.com/) I use it for most of my frontend project.
 
 The most important reason for this is: it's been tested (a lot) and most common problems are fixed in Bootstrap.
 Smarter people have collected the most effective way to build a framework.
 
 If something doesn't work, I probably did something wrong! And that makes it much easier to figure out where the bugs are.
 
+## 🤘
 
-So when "someone" starts with a `I-am-a-frontend-developer-and-I-never-use-a-framework-bullshit.css`, I sometimes miss stuff that I need.
+Sometimes I run into projects where I miss some of the stuff I am confortable with!
 
-In this case I missed a grid. I wanted to copy paste something quick, but I noticed that I really don't know anything about flexbox. This is a great opportunity to find out.
+The primairy reason for the existance of the repe that I needed a grid. I wanted to copy paste something quick, but I noticed that I really don't know anything about flexbox. This is a great opportunity to find out.
 
 I need a dropin minimal css framework just to do a quick fix in existing projects.
 
@@ -20,7 +21,7 @@ What I mostly need from a dropin css:
 
 - layout (I have no idea why you would create a css framework without a layout, but there you have one of the reasons I needed this)
 - positioning (flexbox)
-- image util
+- general utils for padding/margin (ala tailwind)
 
 But why stop there ..
 
