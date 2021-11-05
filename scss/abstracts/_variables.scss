@@ -1,0 +1,29 @@
+// DEFAULT OPTIONS
+$project-name: "Website";
+$version: "0.0.1";
+
+// defaults
+$default-padding: 0.9375rem;
+$default-container-padding: 9.375rem;
+
+// Durations
+$fastDuration: 0.1s !default;
+$mediumDuration: 0.3s !default;
+$slowDuration: 0.5s !default;
+$slowerDuration: 1s !default;
+
+// tailwind durations
+$duration-75: 75ms;
+$duration-100: 100ms;
+$duration-150: 150ms;
+$duration-200: 200ms;
+$duration-300: 300ms;
+$duration-500: 500ms;
+$duration-700: 700ms;
+$duration-1000: 1000ms;
+
+// Nav sizes
+$navHeight: 6.4375rem;
+
+$box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+$box-shadow-card: 2px 2px 4px 0 rgba(38, 38, 38, 0.2);

@@ -1,0 +1,26 @@
+// reset blue focus color
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
+  border-color: $green !important;
+  box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25) !important; // override bootstrap colors/box-shadow
+}
+
+a.name-anchor {
+  position: relative;
+  top: -4.375rem;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.display-none {
+  display: none !important;
+}
+html {
+  scroll-behavior: smooth;
+}

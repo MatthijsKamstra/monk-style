@@ -1,0 +1,60 @@
+//
+//	MIXINS & FUNCTIONS
+//	A few simple Sass helpers.
+//
+
+// @font-face mixin
+// Order of the includes matters, and it is: normal, bold, italic, bold+italic.
+// Forked from Bourbon. https://github.com/thoughtbot/bourbon/
+@mixin font-face-bourbon($font-family, $file-path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+    src: url("#{$file-path}.eot");
+    src: url("#{$file-path}.eot?#iefix") format("embedded-opentype"), url("#{$file-path}.woff") format("woff"),
+      url("#{$file-path}.ttf") format("truetype"), url("#{$file-path}.svg##{$font-family}") format("svg");
+  }
+}
+@mixin font-face($font-family, $file-path) {
+  @font-face {
+    font-family: $font-family;
+    font-display: swap;
+    src: url("#{$file-path}.eot");
+    src: url("#{$file-path}.eot?#iefix") format("embedded-opentype"), url("#{$file-path}.woff2") format("woff2"),
+      url("#{$file-path}.woff") format("woff");
+  }
+}
+@mixin font-face-ttf($font-family, $file-path) {
+  @font-face {
+    font-family: $font-family;
+    font-display: swap;
+    src: url("#{$file-path}.ttf"); /* TTF file for CSS3 browsers */
+  }
+}
+@mixin font-face-otf($font-family, $file-path) {
+  @font-face {
+    font-family: $font-family;
+    font-display: swap;
+    src: url("#{$file-path}.otf");
+  }
+}
+
+//
+// @include vendor-prefix('box-sizing', 'border-box');
+//
+@mixin vendor-prefix($name, $value) {
+  @each $vendor in ("-webkit-", "-moz-", "-ms-", "-o-", "") {
+    #{$vendor}#{$name}: #{$value};
+  }
+}
+
+//
+// @include vendor-prefix('mask-image', 'url("/assets/images/svg/mask/mask-540x330-right.svg")');
+//
+@mixin webkit-prefix($name, $value) {
+  @each $vendor in ("-webkit-", "") {
+    #{$vendor}#{$name}: #{$value};
+  }
+}

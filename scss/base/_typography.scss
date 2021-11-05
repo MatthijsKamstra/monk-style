@@ -1,0 +1,192 @@
+/* font */
+@include font-face-ttf("PTSerif-Regular", "../../assets/fonts/PTSerif-Regular");
+@include font-face-ttf("SourceSansPro-Regular", "../../assets/fonts/SourceSansPro-Regular");
+@include font-face-ttf("SourceSansPro-SemiBold", "../../assets/fonts/SourceSansPro-SemiBold");
+@include font-face-ttf("SourceSansPro-SemiItalic", "../../assets/fonts/SourceSansPro-Italic");
+
+// /**
+// font-family: 'SourceSansPro-Regular', sans-serif;
+// **/
+
+// Font family names
+// (heading 1-4)
+$PTSerif-Regular: "PTSerif-Regular";
+
+// (heading 5-6)
+// (body)
+$SourceSansPro-Regular: "SourceSansPro-Regular";
+$SourceSansPro-SemiBold: "SourceSansPro-SemiBold";
+$SourceSansPro-Italic: "SourceSansPro-SemiItalic";
+
+// Font families
+$base-font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+// $alt-font-family: "Domine", Georgia, sans-serif;
+$sans-serif: "Source Sans Pro", Helvetica, Verdana, sans-serif;
+$serif: Merriweather, Georgia, "Times New Roman", serif;
+$mono: "Source Code Pro", Courier, mono;
+
+$body-font-family: $SourceSansPro-Regular, $base-font-family;
+$heading-font-family: $PTSerif-Regular, $base-font-family;
+
+body {
+  font-family: $body-font-family;
+  color: $black;
+
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 21px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0;
+  margin: 0;
+  margin-bottom: 1.75rem;
+  &.sm {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 1.625rem;
+  }
+  &.xs {
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-bottom: 1.5rem;
+  }
+  &.semibold {
+    font-family: $SourceSansPro-SemiBold;
+  }
+  &.grey-dark {
+    color: $grey-dark;
+  }
+  &.blue-dark {
+    color: $blue-dark;
+  }
+  &.italic {
+    font-family: $SourceSansPro-Italic;
+  }
+}
+
+strong {
+  font-weight: unset;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  font-family: $SourceSansPro-SemiBold;
+}
+// // em {
+// //   font-size: inherit;
+// //   line-height: inherit;
+// //   letter-spacing: inherit;
+// //   font-family: $SourceSansPro-Italic;
+// // }
+
+//default margin = 60
+//if p comes after p deafult margin = 28
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $blue-dark;
+  margin: 0;
+  letter-spacing: 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: $blue-dark;
+  margin: 0;
+  letter-spacing: 0;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: $heading-font-family;
+  &.sans {
+    font-family: $SourceSansPro-Regular;
+  }
+  &.semibold {
+    font-family: $SourceSansPro-SemiBold;
+  }
+  &.white {
+    color: white;
+  }
+}
+
+h1,
+.h1 {
+  font-size: 48px;
+  line-height: 62px;
+  margin-bottom: 1.25rem;
+}
+h2,
+.h2 {
+  font-size: 2.5rem;
+  line-height: 52px;
+  margin-bottom: 1.25rem;
+}
+h3,
+.h3 {
+  font-size: 36px;
+  line-height: 47px;
+  margin-bottom: 0.9375rem;
+}
+h4,
+.h4 {
+  font-size: 32px;
+  line-height: 42px;
+  margin-bottom: 0.625rem;
+}
+h5,
+.h5 {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 0.3125rem;
+  &.green {
+    color: $green;
+  }
+}
+h6,
+.h6 {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 0.3125rem;
+  font-family: $body-font-family;
+  &.semibold {
+    font-family: $SourceSansPro-SemiBold;
+  }
+}
+
+//Typography styling for forms can be found in > _forms.scss
+//Typography styling for navigation can be found in > _navigation.scss
+//Typography styling for footer can be found in > _footer.scss
+//Typography styling for links can be found in > _links.scss
+//Typography styling for accordion can be found in > _accordion.scss
+
+address {
+  font-family: $body-font-family;
+  font-size: 18px;
+  line-height: 28px;
+}

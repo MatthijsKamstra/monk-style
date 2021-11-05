@@ -1,0 +1,266 @@
+nav {
+    flex-direction: column;
+    list-style: none;
+    background-color: $white;
+    border-bottom: 2px solid $grey-light;
+    //Styling for links
+
+    .nav-item {
+        //don't show bulletpoints
+        margin-left: 0;
+        &::before {
+            display: none;
+        }
+        .nav-link {
+            font-size: 18px;
+            line-height: 28px;
+            color: $blue-dark;
+            position: relative;
+            text-decoration: none;
+            display: inline-block;
+            font-family: $SourceSansPro-Regular;
+            &:hover {
+                color: $blue-dark;
+            }
+            &:focus {
+                color: $blue-dark;
+                box-shadow: none !important; // override bootstrap colors/box-shadow
+            }
+            &--small {
+                font-size: 14px;
+                line-height: 24px;
+                display: block;
+                padding-top: 0.375rem;
+                padding-bottom: 0.375rem;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            //Thick line under nav-link when on hover
+            &--underline {
+                text-decoration: none;
+                position: relative;
+                margin: 0rem;
+                @include respond-above(xl) {
+                    display: block;
+                    margin: 0 0.75rem;
+                }
+
+                &::before {
+                    display: block;
+                    content: attr(title);
+                    height: 0;
+                    overflow: hidden;
+                    visibility: hidden;
+                    font-family: $SourceSansPro-SemiBold;
+                }
+                &::after {
+                    position: absolute;
+                    content: "";
+                    height: 0.125rem;
+                    bottom: 0.25rem;
+                    margin: 0 auto;
+                    left: 0;
+                    right: 0;
+                    max-width: 100%;
+                    background: $blue-dark;
+                    opacity: 0;
+                    transition: all 0.2s ease;
+                    @include respond-above(lg) {
+                        bottom: 0.125rem;
+                        max-width: 85%;
+                    }
+                }
+                &:hover {
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        //active state of the nav-link--underline
+        &:active {
+            .nav-link {
+                &--underline {
+                    font-family: $SourceSansPro-SemiBold;
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    //add blue-dark border to all of the links except the first one
+    //footer does contain for the first item. This can be found in footer.scss
+    .nav-item:not(:first-of-type) {
+        .nav-link {
+            &--small {
+                &::after {
+                    content: "";
+                    background: $blue-dark;
+                    position: absolute;
+                    bottom: 25%;
+                    left: 0;
+                    height: 50%;
+                    width: 0.0625rem;
+                }
+            }
+        }
+    }
+
+    //Thin grey-light navbar on top of main navbar
+    .navbar--account {
+        background-color: $grey-light;
+        justify-content: flex-end;
+        padding-right: 0;
+        @include respond-above(lg) {
+            padding-right: 1.875rem;
+        }
+        @include respond-above(xxl) {
+            padding-right: 5.25rem;
+        }
+        .nav-link {
+            margin-bottom: 0;
+        }
+    }
+
+    //main navbar
+    .navbar {
+        padding: 1.4357rem 0;
+        flex-wrap: nowrap;
+
+        .navbar-brand {
+            padding-left: 1rem;
+            max-width: 75%;
+            @include respond-above(lg) {
+                padding-left: 1.875rem;
+                max-width: 100%;
+            }
+            @include respond-above(xxl) {
+                padding-left: 5.25rem;
+            }
+        }
+
+        #navbarSupportedContent {
+            text-align: center;
+            margin: 0 2.5rem;
+
+            @include respond-above(lg) {
+                margin-right: 1.875rem;
+            }
+            @include respond-above(xxl) {
+                margin-right: 5.25rem;
+            }
+        }
+
+        .navbar-nav {
+            margin: 1.25rem 0;
+            margin-top: 4rem;
+            margin-bottom: 14rem;
+            //space between last list item and searchbar
+            li:last-of-type {
+                margin-bottom: 1.2rem;
+            }
+            @include respond-above(lg) {
+                margin: 0;
+                li:last-of-type {
+                    margin-bottom: 0rem;
+                }
+            }
+        }
+
+        //mobile navigation styling
+        .navbar-toggler {
+            padding: 0.2rem 0.8rem 0.25rem 0.8rem;
+            margin-right: 1rem;
+
+            .navbar-toggler-icon {
+                background-image: url(/assets/images/icons/menu.svg);
+                width: 1.25rem;
+                height: 1.25rem;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            //if the navbar is visible show the close button
+            &[aria-expanded="true"] {
+                .navbar-toggler-icon {
+                    background-image: url(/assets/images/icons/close.svg);
+                }
+            }
+        }
+    }
+
+    //search form in navbar
+    form {
+        height: 2rem;
+        align-self: center;
+        max-width: 18.75rem;
+
+        @include respond-above(lg) {
+            max-width: 100%;
+            margin-left: 0.5rem;
+            width: 11.875rem;
+            margin-right: 1rem;
+        }
+        @include respond-above(xl) {
+            margin-left: 1.25rem;
+        }
+    }
+}
+
+//search form in navbar
+form {
+    &#form-search {
+        .form-control {
+            font-size: 16px;
+            line-height: 26px;
+            border-radius: 0.1875rem 0rem 0rem 0.1875rem;
+            border: 1px solid $grey-mid;
+            margin-right: 0;
+            padding: 0 0 0 1.25rem;
+            background-color: $white;
+
+            &::placeholder {
+                color: $grey-dark;
+            }
+            &:hover {
+                background-color: $white;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                border: 1px solid $blue-dark;
+                color: $black;
+            }
+            &:active,
+            &:focus {
+                background-color: $grey-light;
+                border: 1px solid $blue-dark !important;
+                box-shadow: none !important;
+            }
+        }
+
+        .btn__search-submit,
+        .btn__search-submit:hover {
+            border-radius: 0rem 0.1875rem 0.1875rem 0rem;
+            background-color: $blue-dark;
+            border: 1px solid $blue-dark;
+            padding: 0.4375rem;
+            .btn__icon {
+                content: "";
+                display: block;
+                width: 1.125rem;
+                height: 1.125rem;
+                background-image: url(/assets/images/icons/search.svg);
+            }
+        }
+        .btn__search-submit {
+            &:focus {
+                border: 1px solid $blue-dark !important;
+            }
+        }
+    }
+}
