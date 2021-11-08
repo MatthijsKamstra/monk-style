@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "monkee.layout.css",
+	"sources": [
+		"../../scss/monkee.layout.scss",
+		"../../scss/abstracts/_debug.scss",
+		"../../scss/abstracts/_variables.scss",
+		"../../scss/abstracts/_mixins.scss",
+		"../../scss/abstracts/_functions.scss",
+		"../../scss/abstracts/_media-queries.scss"
+	],
+	"names": [],
+	"mappings": "AAOA,4FAAsG"
+}

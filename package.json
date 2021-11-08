@@ -13,7 +13,7 @@
     "sass:build": "npm-run-all -p build-task:*",
     "sass:watch": "chokidar 'src/**/*.scss' -c 'npm run sass:build'",
     "sass2:build": "npm-run-all -p build-task2:*",
-    "sass2:watch": "chokidar 'scss/**/*.scss' -c 'npm run sass:build'",
+    "sass2:watch": "chokidar 'scss/**/*.scss' -c 'npm run sass2:build'",
     "dev": "npm-run-all -p sass:*  & livereload  docs/",
     "dev2": "npm-run-all -p sass2:*  & livereload  docs/",
     "openbrowser": "open http://127.0.0.1:8000/",

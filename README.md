@@ -31,6 +31,27 @@ But why stop there ..
 
 and whatever I in the future add
 
+## more utils
+
+I am looking at https://tailwindcss.com/docs/padding for inspiration
+
+Layout
+
+- breakpoints
+- container
+- grid
+- colums
+- gutters
+
+Spacing
+
+- padding
+- margin
+
+Sizing
+
+- width
+- height
 
 ## About the system
 
@@ -57,7 +78,6 @@ I'm writing down some ideas that should give you an idea what the library is bas
 - black
 - white
 
-
 **elements**
 
 - base
@@ -79,26 +99,18 @@ might concider `hero`/`panel` as names
 - height-75 (large)
 - height-100 (fullscreen)
 
-
 screen widths
 
 default mobile?
 
-
-* -sm = small
-* -md = medium
-* -lg = large
-
-
-
+- -sm = small
+- -md = medium
+- -lg = large
 
 ## fix typography
 
-
 - https://medium.com/codyhouse/create-your-design-system-part-1-typography-7c630d9092bd
 - https://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984
-
-
 
 ## not included in library
 
@@ -106,9 +118,15 @@ I am not forcing you to use them, but you can add them and they will work
 
 ```html
 <!-- Source® Sans Pro, Adobe's first open source typeface family, was designed by Paul D. Hunt. -->
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap"
+  rel="stylesheet"
+/>
 <!-- Ficons, A Simple, Open-Source, Drop-In Alternative for Font Awesome Icons  -->
-<link href="https://cdn.jsdelivr.net/npm/ficons@1.1.52/dist/ficons/font.css" rel="stylesheet">
+<link
+  href="https://cdn.jsdelivr.net/npm/ficons@1.1.52/dist/ficons/font.css"
+  rel="stylesheet"
+/>
 ```
 
 ## Based on
@@ -121,7 +139,6 @@ the following examples:
 - https://github.com/getbase/base
 - https://github.com/Chalarangelo/mini.css
 - https://github.com/twbs/bootstrap
-
 
 ## Defaults I used in the lib
 

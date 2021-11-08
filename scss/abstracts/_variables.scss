@@ -1,10 +1,9 @@
-// DEFAULT OPTIONS
-$project-name: "Website";
-$version: "0.0.1";
+// Core variables
+$version: "0.0.3";
+$project-name: "monkee-style";
 
+// DEFAULT OPTIONS
 // defaults
-$default-padding: 0.9375rem;
-$default-container-padding: 9.375rem;
 
 // Durations
 $fastDuration: 0.1s !default;
@@ -22,8 +21,11 @@ $duration-500: 500ms;
 $duration-700: 700ms;
 $duration-1000: 1000ms;
 
-// Nav sizes
-$navHeight: 6.4375rem;
-
-$box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-$box-shadow-card: 2px 2px 4px 0 rgba(38, 38, 38, 0.2);
+// container sizes
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1320px,
+);
