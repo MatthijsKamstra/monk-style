@@ -1,10 +1,3 @@
-// overwrite the default values used in Bootstrap 5
-.container {
-	@include respond-above(lg) {
-		width: 1140px;
-	}
-}
-
 // container only used for debugging
 .container-placeholder {
 	position: relative;

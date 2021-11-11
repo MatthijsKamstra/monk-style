@@ -1,15 +1,4 @@
 /*! monkee-style.utils.css v0.0.3 | MIT License | github.com/matthijskamstra/monkee-style */
-/**
-
-.container 	100% 	540px 	720px 	960px 	1140px 	1320px
-.container-sm 	100% 	540px 	720px 	960px 	1140px 	1320px
-.container-md 	100% 	100% 	720px 	960px 	1140px 	1320px
-.container-lg 	100% 	100% 	100% 	960px 	1140px 	1320px
-.container-xl 	100% 	100% 	100% 	100% 	1140px 	1320px
-.container-xxl 	100% 	100% 	100% 	100% 	100% 	1320px
-.container-fluid
-
-**/
 .container {
   width: 100%;
   padding-right: 1rem;
@@ -28,70 +17,110 @@
 tailwind ripoff: width in percentage with breakpoints
 */
 @media (min-width: 576px) {
+  /*! value: 540px */
+  /*! br: sm */
   .container {
-    width: 100%;
+    width: 540px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto; }
+  .container-sm {
+    width: 540px;
     padding-right: 1rem;
     padding-left: 1rem;
     margin-right: auto;
     margin-left: auto; }
   .sm\:container {
-    width: 100%;
+    width: 540px;
     padding-right: 1rem;
     padding-left: 1rem;
     margin-right: auto;
     margin-left: auto; } }
 
 @media (min-width: 768px) {
+  /*! value: 720px */
+  /*! br: md */
   .container {
-    width: 100%;
+    width: 720px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto; }
+  .container-md {
+    width: 720px;
     padding-right: 1rem;
     padding-left: 1rem;
     margin-right: auto;
     margin-left: auto; }
   .md\:container {
-    width: 100%;
+    width: 720px;
     padding-right: 1rem;
     padding-left: 1rem;
     margin-right: auto;
     margin-left: auto; } }
 
 @media (min-width: 992px) {
+  /*! value: 960px */
+  /*! br: lg */
   .container {
-    width: 100%;
+    width: 960px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto; }
+  .container-lg {
+    width: 960px;
     padding-right: 1rem;
     padding-left: 1rem;
     margin-right: auto;
     margin-left: auto; }
   .lg\:container {
-    width: 100%;
+    width: 960px;
     padding-right: 1rem;
     padding-left: 1rem;
     margin-right: auto;
     margin-left: auto; } }
 
 @media (min-width: 1200px) {
+  /*! value: 1140px */
+  /*! br: xl */
   .container {
-    width: 100%;
+    width: 1140px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto; }
+  .container-xl {
+    width: 1140px;
     padding-right: 1rem;
     padding-left: 1rem;
     margin-right: auto;
     margin-left: auto; }
   .xl\:container {
-    width: 100%;
+    width: 1140px;
     padding-right: 1rem;
     padding-left: 1rem;
     margin-right: auto;
     margin-left: auto; } }
 
 @media (min-width: 1400px) {
+  /*! value: 1320px */
+  /*! br: xxl */
   .container {
-    width: 100%;
+    width: 1320px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto; }
+  .container-xxl {
+    width: 1320px;
     padding-right: 1rem;
     padding-left: 1rem;
     margin-right: auto;
     margin-left: auto; }
   .xxl\:container {
-    width: 100%;
+    width: 1320px;
     padding-right: 1rem;
     padding-left: 1rem;
     margin-right: auto;

@@ -1,17 +1,17 @@
 // bootstrap https://getbootstrap.com/docs/5.1/layout/containers/
 // tailwind https://tailwindcss.com/docs/container
 
-/**
+// /**
 
-.container 	100% 	540px 	720px 	960px 	1140px 	1320px
-.container-sm 	100% 	540px 	720px 	960px 	1140px 	1320px
-.container-md 	100% 	100% 	720px 	960px 	1140px 	1320px
-.container-lg 	100% 	100% 	100% 	960px 	1140px 	1320px
-.container-xl 	100% 	100% 	100% 	100% 	1140px 	1320px
-.container-xxl 	100% 	100% 	100% 	100% 	100% 	1320px
-.container-fluid
+// .container 	100% 	540px 	720px 	960px 	1140px 	1320px
+// .container-sm 	100% 	540px 	720px 	960px 	1140px 	1320px
+// .container-md 	100% 	100% 	720px 	960px 	1140px 	1320px
+// .container-lg 	100% 	100% 	100% 	960px 	1140px 	1320px
+// .container-xl 	100% 	100% 	100% 	100% 	1140px 	1320px
+// .container-xxl 	100% 	100% 	100% 	100% 	100% 	1320px
+// .container-fluid
 
-**/
+// **/
 
 //
 // md:container
@@ -31,21 +31,30 @@
 	margin-left: auto;
 }
 
+// @debug map.get($container-max-widths, "md");
 /**
 tailwind ripoff: width in percentage with breakpoints
 */
-@each $br, $value in $breakpoints {
+@each $br, $value in $container-max-widths {
 	@include respond-above($br) {
+		/*! value: #{$value} */
+		/*! br: #{$br} */
 		.container {
-			width: 100%;
+			width: #{$value};
 			padding-right: 1rem;
 			padding-left: 1rem;
 			margin-right: auto;
 			margin-left: auto;
 		}
-
+		.container-#{$br} {
+			width: #{$value};
+			padding-right: 1rem;
+			padding-left: 1rem;
+			margin-right: auto;
+			margin-left: auto;
+		}
 		.#{$br}\:container {
-			width: 100%;
+			width: #{$value};
 			padding-right: 1rem;
 			padding-left: 1rem;
 			margin-right: auto;
