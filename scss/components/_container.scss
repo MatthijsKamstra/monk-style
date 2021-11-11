@@ -1,0 +1,55 @@
+// bootstrap https://getbootstrap.com/docs/5.1/layout/containers/
+// tailwind https://tailwindcss.com/docs/container
+
+/**
+
+.container 	100% 	540px 	720px 	960px 	1140px 	1320px
+.container-sm 	100% 	540px 	720px 	960px 	1140px 	1320px
+.container-md 	100% 	100% 	720px 	960px 	1140px 	1320px
+.container-lg 	100% 	100% 	100% 	960px 	1140px 	1320px
+.container-xl 	100% 	100% 	100% 	100% 	1140px 	1320px
+.container-xxl 	100% 	100% 	100% 	100% 	100% 	1320px
+.container-fluid
+
+**/
+
+//
+// md:container
+
+.container {
+	width: 100%;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	margin-right: auto;
+	margin-left: auto;
+}
+.container-fluid {
+	width: 100%;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/**
+tailwind ripoff: width in percentage with breakpoints
+*/
+@each $br, $value in $breakpoints {
+	@include respond-above($br) {
+		.container {
+			width: 100%;
+			padding-right: 1rem;
+			padding-left: 1rem;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		.#{$br}\:container {
+			width: 100%;
+			padding-right: 1rem;
+			padding-left: 1rem;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+}

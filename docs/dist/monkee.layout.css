@@ -1,3 +1,100 @@
 /*! monkee-style.utils.css v0.0.3 | MIT License | github.com/matthijskamstra/monkee-style */
+/**
+
+.container 	100% 	540px 	720px 	960px 	1140px 	1320px
+.container-sm 	100% 	540px 	720px 	960px 	1140px 	1320px
+.container-md 	100% 	100% 	720px 	960px 	1140px 	1320px
+.container-lg 	100% 	100% 	100% 	960px 	1140px 	1320px
+.container-xl 	100% 	100% 	100% 	100% 	1140px 	1320px
+.container-xxl 	100% 	100% 	100% 	100% 	100% 	1320px
+.container-fluid
+
+**/
+.container {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto; }
+
+.container-fluid {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto; }
+
+/**
+tailwind ripoff: width in percentage with breakpoints
+*/
+@media (min-width: 576px) {
+  .container {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto; }
+  .sm\:container {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto; } }
+
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto; }
+  .md\:container {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto; } }
+
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto; }
+  .lg\:container {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto; }
+  .xl\:container {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto; } }
+
+@media (min-width: 1400px) {
+  .container {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto; }
+  .xxl\:container {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto; } }
 
 /*# sourceMappingURL=monkee.layout.css.map */
