@@ -7,10 +7,5 @@
 
 /*! #{$project-name}.utils.css v#{$version} | MIT License | github.com/matthijskamstra/monkee-style */
 
-// Spacing
-
-// - padding
-// - margin
-
-// utils
-// @import "base/spacing";
+// layout containers
+@import "components/container";
