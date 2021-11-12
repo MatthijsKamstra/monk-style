@@ -1,0 +1,270 @@
+/*! monkee-style.utils.css v0.0.3 | MIT License | github.com/matthijskamstra/monkee-style */
+/* backgrounds colors */
+.bg-purple {
+  background-color: #c3c3f5; }
+
+.bg-blue {
+  background-color: #c3d9f5; }
+
+.bg-red {
+  background-color: #efbebb; }
+
+.bg-orange {
+  background-color: #f5d6ab; }
+
+.bg-orangered {
+  background-color: #fcc8b6; }
+
+.bg-yellow {
+  background-color: #fff689; }
+
+.bg-offwhite {
+  background-color: #f7f7f7; }
+
+.bg-gray {
+  background-color: #cfcfcf; }
+
+.bg-offblack {
+  background-color: #444444; }
+
+.bg-pink {
+  background-color: #ffb5f5; }
+
+.bg-black {
+  background-color: #000000; }
+
+.bg-blue-dark {
+  background-color: #002269; }
+
+.bg-green {
+  background-color: #c5bf10; }
+
+.bg-green-light {
+  background-color: #f3f2cf; }
+
+.bg-grey-dark {
+  background-color: #a6a6a3; }
+
+.bg-grey-mid {
+  background-color: #d9d9d6; }
+
+.bg-grey-light {
+  background-color: #f5f5f1; }
+
+.bg-white {
+  background-color: #ffffff; }
+
+.bg-red-error {
+  background-color: #c51010; }
+
+.bg-red-light {
+  background-color: #fcf3f3; }
+
+/* Fills colors for SVG */
+.fill-purple {
+  fill: #c3c3f5; }
+
+.fill-blue {
+  fill: #c3d9f5; }
+
+.fill-red {
+  fill: #efbebb; }
+
+.fill-orange {
+  fill: #f5d6ab; }
+
+.fill-orangered {
+  fill: #fcc8b6; }
+
+.fill-yellow {
+  fill: #fff689; }
+
+.fill-offwhite {
+  fill: #f7f7f7; }
+
+.fill-gray {
+  fill: #cfcfcf; }
+
+.fill-offblack {
+  fill: #444444; }
+
+.fill-pink {
+  fill: #ffb5f5; }
+
+.fill-black {
+  fill: #000000; }
+
+.fill-blue-dark {
+  fill: #002269; }
+
+.fill-green {
+  fill: #c5bf10; }
+
+.fill-green-light {
+  fill: #f3f2cf; }
+
+.fill-grey-dark {
+  fill: #a6a6a3; }
+
+.fill-grey-mid {
+  fill: #d9d9d6; }
+
+.fill-grey-light {
+  fill: #f5f5f1; }
+
+.fill-white {
+  fill: #ffffff; }
+
+.fill-red-error {
+  fill: #c51010; }
+
+.fill-red-light {
+  fill: #fcf3f3; }
+
+/* Text colors */
+.text-purple {
+  color: #c3c3f5; }
+
+.text-blue {
+  color: #c3d9f5; }
+
+.text-red {
+  color: #efbebb; }
+
+.text-orange {
+  color: #f5d6ab; }
+
+.text-orangered {
+  color: #fcc8b6; }
+
+.text-yellow {
+  color: #fff689; }
+
+.text-offwhite {
+  color: #f7f7f7; }
+
+.text-gray {
+  color: #cfcfcf; }
+
+.text-offblack {
+  color: #444444; }
+
+.text-pink {
+  color: #ffb5f5; }
+
+.text-black {
+  color: #000000; }
+
+.text-blue-dark {
+  color: #002269; }
+
+.text-green {
+  color: #c5bf10; }
+
+.text-green-light {
+  color: #f3f2cf; }
+
+.text-grey-dark {
+  color: #a6a6a3; }
+
+.text-grey-mid {
+  color: #d9d9d6; }
+
+.text-grey-light {
+  color: #f5f5f1; }
+
+.text-white {
+  color: #ffffff; }
+
+.text-red-error {
+  color: #c51010; }
+
+.text-red-light {
+  color: #fcf3f3; }
+
+/* Border colors */
+.border-purple {
+  border: 1px solid #c3c3f5; }
+
+.border-blue {
+  border: 1px solid #c3d9f5; }
+
+.border-red {
+  border: 1px solid #efbebb; }
+
+.border-orange {
+  border: 1px solid #f5d6ab; }
+
+.border-orangered {
+  border: 1px solid #fcc8b6; }
+
+.border-yellow {
+  border: 1px solid #fff689; }
+
+.border-offwhite {
+  border: 1px solid #f7f7f7; }
+
+.border-gray {
+  border: 1px solid #cfcfcf; }
+
+.border-offblack {
+  border: 1px solid #444444; }
+
+.border-pink {
+  border: 1px solid #ffb5f5; }
+
+.border-black {
+  border: 1px solid #000000; }
+
+.border-blue-dark {
+  border: 1px solid #002269; }
+
+.border-green {
+  border: 1px solid #c5bf10; }
+
+.border-green-light {
+  border: 1px solid #f3f2cf; }
+
+.border-grey-dark {
+  border: 1px solid #a6a6a3; }
+
+.border-grey-mid {
+  border: 1px solid #d9d9d6; }
+
+.border-grey-light {
+  border: 1px solid #f5f5f1; }
+
+.border-white {
+  border: 1px solid #ffffff; }
+
+.border-red-error {
+  border: 1px solid #c51010; }
+
+.border-red-light {
+  border: 1px solid #fcf3f3; }
+
+/**
+Filters only work when image/svg is black
+*/
+.filter-yellow {
+  filter: invert(86%) sepia(23%) saturate(722%) hue-rotate(360deg) brightness(106%) contrast(106%); }
+
+.filter-white {
+  filter: invert(100%) sepia(100%) saturate(14%) hue-rotate(212deg) brightness(104%) contrast(104%); }
+
+.filter-black {
+  filter: invert(0%) sepia(82%) saturate(7427%) hue-rotate(22deg) brightness(97%) contrast(103%); }
+
+.filter-blue-dark {
+  filter: invert(13%) sepia(50%) saturate(3389%) hue-rotate(211deg) brightness(92%) contrast(112%); }
+
+.filter-green {
+  filter: invert(64%) sepia(62%) saturate(609%) hue-rotate(17deg) brightness(102%) contrast(88%); }
+
+.filter-green-light {
+  filter: invert(86%) sepia(21%) saturate(276%) hue-rotate(11deg) brightness(112%) contrast(91%); }
+
+.filter-red-error {
+  filter: invert(12%) sepia(67%) saturate(6989%) hue-rotate(358deg) brightness(91%) contrast(91%); }
+
+/*# sourceMappingURL=monkee.color.css.map */

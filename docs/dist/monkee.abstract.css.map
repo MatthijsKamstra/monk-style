@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "monkee.abstract.css",
+	"sources": [
+		"../../scss/monkee.abstract.scss",
+		"../../scss/abstracts/_variables.scss",
+		"../../scss/abstracts/_debug.scss",
+		"../../scss/abstracts/_colors.scss",
+		"../../scss/abstracts/_functions.scss",
+		"../../scss/abstracts/_gradients.scss",
+		"../../scss/abstracts/_media-queries.scss",
+		"../../scss/abstracts/_mixins.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

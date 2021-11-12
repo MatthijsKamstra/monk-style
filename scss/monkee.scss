@@ -1,35 +1,43 @@
 // File: main.scss
 
 // abstracts
-@import "abstracts/debug";
 @import "abstracts/variables";
+@import "abstracts/debug";
+@import "abstracts/colors";
+@import "abstracts/functions";
+@import "abstracts/gradients";
+@import "abstracts/media-queries";
+@import "abstracts/mixins";
 
 /*! #{$project-name} v#{$version} */
 
-@import "abstracts/mixins";
-@import "abstracts/functions";
-@import "abstracts/media-queries";
-
 // vendor
-// would be bootstrap?
+@import "vendors/minireset";
+// could be bootstrap?
 
 // base
-@import "base/colors";
 @import "base/typography";
+@import "base/root";
+@import "base/colors";
 @import "base/base";
 @import "base/img";
 @import "base/width";
 @import "base/spacing";
 
 // components
-@import "components/container";
-@import "components/debug";
+// @import "components/module-template";
 @import "components/hero";
+@import "components/off-canvas";
+@import "components/debug_container";
+@import "components/buttons";
+@import "components/media";
+@import "components/labels";
 
 // layout
-// @import "layout/container";
-// @import "layout/navigation";
-// @import "layout/footer";
+@import "layout/container";
+@import "layout/grid";
+@import "layout/navigation";
+@import "layout/footer";
 
 // components / modules
 // @import "components/accordion";

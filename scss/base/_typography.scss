@@ -1,8 +1,10 @@
 /* font */
-@include font-face-ttf("PTSerif-Regular", "../../assets/fonts/PTSerif-Regular");
-@include font-face-ttf("SourceSansPro-Regular", "../../assets/fonts/SourceSansPro-Regular");
-@include font-face-ttf("SourceSansPro-SemiBold", "../../assets/fonts/SourceSansPro-SemiBold");
-@include font-face-ttf("SourceSansPro-SemiItalic", "../../assets/fonts/SourceSansPro-Italic");
+// @include font-face-ttf("PTSerif-Regular", "../../assets/fonts/PTSerif-Regular");
+// @include font-face-ttf("SourceSansPro-Regular", "../../assets/fonts/SourceSansPro-Regular");
+// @include font-face-ttf("SourceSansPro-SemiBold", "../../assets/fonts/SourceSansPro-SemiBold");
+// @include font-face-ttf("SourceSansPro-SemiItalic", "../../assets/fonts/SourceSansPro-Italic");
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap");
 
 // /**
 // font-family: 'SourceSansPro-Regular', sans-serif;
@@ -18,16 +20,71 @@ $SourceSansPro-Regular: "SourceSansPro-Regular";
 $SourceSansPro-SemiBold: "SourceSansPro-SemiBold";
 $SourceSansPro-Italic: "SourceSansPro-SemiItalic";
 
+// Fonts
+// // Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
+$monkee-font-family: "Source Sans Pro" !default;
+// $base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto !default;
+// // -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+// $mono-font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace !default;
+// // SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+
+// $fallback-font-family: "Helvetica Neue", sans-serif !default;
+// $body-font-family: $monkee-font-family, $base-font-family, $fallback-font-family !default;
+
 // Font families
 $base-font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
   sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 // $alt-font-family: "Domine", Georgia, sans-serif;
+$mono-font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace !default;
 $sans-serif: "Source Sans Pro", Helvetica, Verdana, sans-serif;
 $serif: Merriweather, Georgia, "Times New Roman", serif;
 $mono: "Source Code Pro", Courier, mono;
 
-$body-font-family: $SourceSansPro-Regular, $base-font-family;
-$heading-font-family: $PTSerif-Regular, $base-font-family;
+$fallback-font-family: "Helvetica Neue", sans-serif !default;
+$body-font-family: $monkee-font-family, $base-font-family, $fallback-font-family !default;
+
+// $body-font-family: $SourceSansPro-Regular, $base-font-family;
+// $heading-font-family: $PTSerif-Regular, $base-font-family;
+
+// html {
+//   box-sizing: border-box;
+//   font-size: $html-font-size;
+//   line-height: $html-line-height;
+//   -webkit-tap-highlight-color: transparent;
+// }
+
+// body {
+//   background: $body-bg;
+//   // background: v(main-bg-color);
+//   // background: var(--main-bg-color);
+//   color: $body-font-color;
+//   font-family: $body-font-family;
+//   font-size: $font-size;
+//   overflow-x: hidden;
+//   text-rendering: optimizeLegibility;
+// }
+
+// a {
+//   color: $link-color;
+//   outline: none;
+//   text-decoration: none;
+
+//   &:focus {
+//     // @include control-shadow();
+//   }
+
+//   &:focus,
+//   &:hover,
+//   &:active,
+//   &.active {
+//     color: $link-color-dark;
+//     text-decoration: underline;
+//   }
+
+//   &:visited {
+//     color: $link-color-light;
+//   }
+// }
 
 body {
   font-family: $body-font-family;
@@ -41,152 +98,386 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-p {
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0;
-  margin: 0;
-  margin-bottom: 1.75rem;
-  &.sm {
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 1.625rem;
-  }
-  &.xs {
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: 24px;
-    margin-bottom: 1.5rem;
-  }
-  &.semibold {
-    font-family: $SourceSansPro-SemiBold;
-  }
-  &.grey-dark {
-    color: $grey-dark;
-  }
-  &.blue-dark {
-    color: $blue-dark;
-  }
-  &.italic {
-    font-family: $SourceSansPro-Italic;
-  }
-}
+// p {
+//   font-size: 18px;
+//   line-height: 28px;
+//   letter-spacing: 0;
+//   margin: 0;
+//   margin-bottom: 1.75rem;
+//   &.sm {
+//     font-size: 16px;
+//     line-height: 26px;
+//     margin-bottom: 1.625rem;
+//   }
+//   &.xs {
+//     font-size: 14px;
+//     letter-spacing: 0;
+//     line-height: 24px;
+//     margin-bottom: 1.5rem;
+//   }
+//   &.semibold {
+//     font-family: $SourceSansPro-SemiBold;
+//   }
+//   &.grey-dark {
+//     color: $grey-dark;
+//   }
+//   &.blue-dark {
+//     color: $blue-dark;
+//   }
+//   &.italic {
+//     font-family: $SourceSansPro-Italic;
+//   }
+// }
 
-strong {
-  font-weight: unset;
-  font-size: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  font-family: $SourceSansPro-SemiBold;
-}
-// // em {
-// //   font-size: inherit;
-// //   line-height: inherit;
-// //   letter-spacing: inherit;
-// //   font-family: $SourceSansPro-Italic;
-// // }
+// strong {
+//   font-weight: unset;
+//   font-size: inherit;
+//   line-height: inherit;
+//   letter-spacing: inherit;
+//   font-family: $SourceSansPro-SemiBold;
+// }
+// // // em {
+// // //   font-size: inherit;
+// // //   line-height: inherit;
+// // //   letter-spacing: inherit;
+// // //   font-family: $SourceSansPro-Italic;
+// // // }
 
-//default margin = 60
-//if p comes after p deafult margin = 28
+// //default margin = 60
+// //if p comes after p deafult margin = 28
 
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   color: $blue-dark;
+//   margin: 0;
+//   letter-spacing: 0;
+// }
+
+// .h1,
+// .h2,
+// .h3,
+// .h4,
+// .h5,
+// .h6 {
+//   color: $blue-dark;
+//   margin: 0;
+//   letter-spacing: 0;
+// }
+
+// h1,
+// .h1,
+// h2,
+// .h2,
+// h3,
+// .h3,
+// h4,
+// .h4,
+// h5,
+// .h5,
+// h6,
+// .h6 {
+//   font-family: $heading-font-family;
+//   &.sans {
+//     font-family: $SourceSansPro-Regular;
+//   }
+//   &.semibold {
+//     font-family: $SourceSansPro-SemiBold;
+//   }
+//   &.white {
+//     color: white;
+//   }
+// }
+
+// h1,
+// .h1 {
+//   font-size: 48px;
+//   line-height: 62px;
+//   margin-bottom: 1.25rem;
+// }
+// h2,
+// .h2 {
+//   font-size: 2.5rem;
+//   line-height: 52px;
+//   margin-bottom: 1.25rem;
+// }
+// h3,
+// .h3 {
+//   font-size: 36px;
+//   line-height: 47px;
+//   margin-bottom: 0.9375rem;
+// }
+// h4,
+// .h4 {
+//   font-size: 32px;
+//   line-height: 42px;
+//   margin-bottom: 0.625rem;
+// }
+// h5,
+// .h5 {
+//   font-size: 24px;
+//   line-height: 32px;
+//   margin-bottom: 0.3125rem;
+//   &.green {
+//     color: $green;
+//   }
+// }
+// h6,
+// .h6 {
+//   font-size: 20px;
+//   line-height: 28px;
+//   margin-bottom: 0.3125rem;
+//   font-family: $body-font-family;
+//   &.semibold {
+//     font-family: $SourceSansPro-SemiBold;
+//   }
+// }
+
+// //Typography styling for forms can be found in > _forms.scss
+// //Typography styling for navigation can be found in > _navigation.scss
+// //Typography styling for footer can be found in > _footer.scss
+// //Typography styling for links can be found in > _links.scss
+// //Typography styling for accordion can be found in > _accordion.scss
+
+// address {
+//   font-family: $body-font-family;
+//   font-size: 18px;
+//   line-height: 28px;
+// }
+
+// font-family: 'Source Sans Pro', sans-serif;
+
+/*  =GLOBAL ELEMENTS
+--------------------------------------------------------------
+    Vertical Rhythm: 18px vertical grid
+*/
+// body {
+//     color:#222;
+//     font-family:"Helvetica Neue",Helvetica,Arial,"Liberation Sans","FreeSans",sans-serif;
+//     font-size:13px;
+// }
+
+// p, ul, ol, dl, blockquote, pre, dialog{
+//     font-size:1em; /* 13px */
+//     line-height:1.3846em; /* 18px */
+//     margin:0 0 1.3846em 0;
+// }
+// h1{
+//     font-size:2.4615em; /* 32px */
+//     line-height:1.125em; /* 36px */
+//     margin-top:0.5625em;
+//     margin-bottom:0em;
+// }
+// h2{
+//     font-size:1.5385em; /* 20px */
+//     font-weight:normal;
+//     line-height:1.8em; /* 36px */
+//     margin-top:0.9em;
+//     margin-bottom:0em;
+// }
+// h3{
+//     font-size: 1.2308em; /* 16px */
+//     line-height: 1.125em; /* 18px */
+//     margin-top: 1.125em;
+//     margin-bottom: 0em;
+// }
+// h4{
+//     font-size:1.0769em; /* 14px */
+//     line-height:1.2857em; /* 18px */
+//     margin-top:1.2857em;
+//     margin-bottom:0em;
+// }
+// h5{
+//     font-size:1em; /* 13px */
+//     line-height:1.3846em; /* 18px */
+//     margin:0;
+// }
+// h6{
+//     font-size:1em; /* 13px */
+//     font-weight:normal;
+//     font-variant:small-caps;
+//     letter-spacing:2px;
+//     line-height:1.3846em; /* 18px */
+// }
+// blockquote{border-left:3px solid rgba(221,221,221,.5);font-style:italic;padding-left:17px;}/* #DDD at .5 strength*/
+// pre,code{font-family:monaco,"Courier New",Courier,monospace;font-size:1em;}
+// sup,sub{font-size:0.7em;line-height:1em;vertical-align:baseline;}
+// sup{position:relative;top:-0.4em;}
+// sub{position:relative;top:0.4em;}
+
+// ol, ul, dd{margin-left:1.5em;}
+// ul{list-style:disc;}
+// li ul, li ol{margin-bottom:0}
+// ol{list-style:decimal;}
+// dt{font-weight:bold;}
+
+// a:link, a:visited{color:#395a8d;text-decoration:none;}
+// a:hover, a:focus, a:active{color:#2f2f65;text-decoration:underline;}
+
+// hr{
+//     margin:1.3846em 0 1.308em 0;
+//     height:0;
+//     border:1px solid #888;
+//     border-width:1px 0 0 0;
+// }
+
+// https://github.com/picturepan2/spectre/blob/master/src/_typography.scss
+
+// Typography
+// Headings
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: $blue-dark;
-  margin: 0;
-  letter-spacing: 0;
+  color: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  margin-top: 0;
 }
-
 .h1,
 .h2,
 .h3,
 .h4,
 .h5,
 .h6 {
-  color: $blue-dark;
-  margin: 0;
-  letter-spacing: 0;
+  font-weight: 500;
 }
-
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-  font-family: $heading-font-family;
-  &.sans {
-    font-family: $SourceSansPro-Regular;
-  }
-  &.semibold {
-    font-family: $SourceSansPro-SemiBold;
-  }
-  &.white {
-    color: white;
-  }
-}
-
 h1,
 .h1 {
-  font-size: 48px;
-  line-height: 62px;
-  margin-bottom: 1.25rem;
+  font-size: 2rem;
 }
 h2,
 .h2 {
-  font-size: 2.5rem;
-  line-height: 52px;
-  margin-bottom: 1.25rem;
+  font-size: 1.6rem;
 }
 h3,
 .h3 {
-  font-size: 36px;
-  line-height: 47px;
-  margin-bottom: 0.9375rem;
+  font-size: 1.4rem;
 }
 h4,
 .h4 {
-  font-size: 32px;
-  line-height: 42px;
-  margin-bottom: 0.625rem;
+  font-size: 1.2rem;
 }
 h5,
 .h5 {
-  font-size: 24px;
-  line-height: 32px;
-  margin-bottom: 0.3125rem;
-  &.green {
-    color: $green;
-  }
+  font-size: 1rem;
 }
 h6,
 .h6 {
-  font-size: 20px;
-  line-height: 28px;
-  margin-bottom: 0.3125rem;
-  font-family: $body-font-family;
-  &.semibold {
-    font-family: $SourceSansPro-SemiBold;
+  font-size: 0.8rem;
+}
+
+// display
+%display {
+  font-weight: 300;
+  line-height: 1.2;
+}
+.display {
+  @extend %display;
+  font-size: 5.5rem;
+  &-1 {
+    @extend %display;
+    font-size: 5.5rem;
+  }
+  &-2 {
+    @extend %display;
+    font-size: 4.5rem;
+  }
+  &-3 {
+    @extend %display;
+    font-size: 3.5rem;
+  }
+  &-4 {
+    @extend %display;
+    font-size: 3rem;
   }
 }
 
-//Typography styling for forms can be found in > _forms.scss
-//Typography styling for navigation can be found in > _navigation.scss
-//Typography styling for footer can be found in > _footer.scss
-//Typography styling for links can be found in > _links.scss
-//Typography styling for accordion can be found in > _accordion.scss
+// Paragraphs
+p {
+  margin: 0 0 $line-height;
+}
 
-address {
-  font-family: $body-font-family;
-  font-size: 18px;
-  line-height: 28px;
+// Semantic text elements
+a,
+ins,
+u {
+  text-decoration-skip: ink edges;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+  text-decoration: none;
+}
+
+kbd {
+  // @include label-base();
+  // @include label-variant($light-color, $dark-color);
+  font-size: $font-size-sm;
+}
+
+// mark {
+//   // @include label-variant($body-font-color, $highlight-color);
+//   border-bottom: $unit-o solid darken($highlight-color, 15%);
+//   border-radius: $border-radius;
+//   padding: $unit-o $unit-h 0;
+// }
+
+// Blockquote
+blockquote {
+  border-left: 1px solid $black;
+  margin-left: 0;
+  padding: 0.4rem 0.8rem;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Lists
+ul,
+ol {
+  margin: 0.8rem 0 0.8rem 0.8rem;
+  padding: 0;
+
+  ul,
+  ol {
+    margin: 0.8rem 0 0.8rem 0.8rem;
+  }
+
+  li {
+    margin-top: 0.4rem;
+  }
+}
+
+ul {
+  list-style: disc inside;
+
+  ul {
+    list-style-type: circle;
+  }
+}
+
+ol {
+  list-style: decimal inside;
+
+  ol {
+    list-style-type: lower-alpha;
+  }
+}
+
+dl {
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    margin: 0.4rem 0 0.8rem 0;
+  }
 }

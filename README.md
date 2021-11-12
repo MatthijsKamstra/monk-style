@@ -129,6 +129,12 @@ I am not forcing you to use them, but you can add them and they will work
 />
 ```
 
+```html
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap");
+</style>
+```
+
 ## Based on
 
 the following examples:

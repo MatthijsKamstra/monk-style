@@ -3,9 +3,11 @@ $version: "0.0.3";
 $project-name: "monkee-style";
 
 // DEFAULT OPTIONS
-// defaults
+$border-radius: 2px;
+// layout
+$layout-padding: 15px;
 
-// Durations
+// durations
 $fastDuration: 0.1s !default;
 $mediumDuration: 0.3s !default;
 $slowDuration: 0.5s !default;
@@ -37,3 +39,68 @@ $container-max-widths: (
 //   xl: 1200px,
 //   xxl: 1400px,
 // );
+
+// Unit sizes
+// $unit-o: 0.05rem !default;
+// $unit-h: 0.1rem !default;
+// $unit-1: 0.2rem !default;
+// $unit-2: 0.4rem !default;
+// $unit-3: 0.6rem !default;
+// $unit-4: 0.8rem !default;
+// $unit-5: 1rem !default;
+// $unit-6: 1.2rem !default;
+// $unit-7: 1.4rem !default;
+// $unit-8: 1.6rem !default;
+// $unit-9: 1.8rem !default;
+// $unit-10: 2rem !default;
+// $unit-12: 2.4rem !default;
+// $unit-16: 3.2rem !default;
+
+// // Font sizes
+$html-font-size: 20px !default;
+$html-line-height: 1.5 !default;
+$font-size: 0.8rem !default;
+$font-size-sm: 0.7rem !default;
+$font-size-lg: 0.9rem !default;
+$line-height: 1.2rem !default;
+
+// // Sizes
+// $layout-spacing: $unit-2 !default;
+// $layout-spacing-sm: $unit-1 !default;
+// $layout-spacing-lg: $unit-4 !default;
+// $border-radius: $unit-h !default;
+// $border-width: $unit-o !default;
+// $border-width-lg: $unit-h !default;
+// $control-size: $unit-9 !default;
+// $control-size-sm: $unit-7 !default;
+// $control-size-lg: $unit-10 !default;
+// $control-padding-x: $unit-2 !default;
+// $control-padding-x-sm: $unit-2 * 0.75 !default;
+// $control-padding-x-lg: $unit-2 * 1.5 !default;
+// $control-padding-y: ($control-size - $line-height) / 2 - $border-width !default;
+// $control-padding-y-sm: ($control-size-sm - $line-height) / 2 - $border-width !default;
+// $control-padding-y-lg: ($control-size-lg - $line-height) / 2 - $border-width !default;
+// $control-icon-size: 0.8rem !default;
+
+// $control-width-xs: 180px !default;
+// $control-width-sm: 320px !default;
+// $control-width-md: 640px !default;
+// $control-width-lg: 960px !default;
+// $control-width-xl: 1280px !default;
+
+// // Responsive breakpoints
+// $size-xs: 480px !default;
+// $size-sm: 600px !default;
+// $size-md: 840px !default;
+// $size-lg: 960px !default;
+// $size-xl: 1280px !default;
+// $size-2x: 1440px !default;
+
+// $responsive-breakpoint: $size-xs !default;
+
+// // Z-index
+// $zindex-0: 1 !default;
+// $zindex-1: 100 !default;
+// $zindex-2: 200 !default;
+// $zindex-3: 300 !default;
+// $zindex-4: 400 !default;

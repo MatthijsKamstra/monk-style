@@ -1,3 +1,13 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 // reset blue focus color
 a:focus,
 button:focus,
@@ -20,7 +30,4 @@ a.name-anchor {
 
 .display-none {
   display: none !important;
-}
-html {
-  scroll-behavior: smooth;
 }
