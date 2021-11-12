@@ -1357,6 +1357,17 @@ Filters only work when image/svg is black
 *::after {
   box-sizing: border-box; }
 
+/*
+default style
+*/
+html,
+body {
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
 html {
   scroll-behavior: smooth; }
 
