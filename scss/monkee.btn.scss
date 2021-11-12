@@ -7,6 +7,7 @@
 @import "abstracts/media-queries";
 @import "abstracts/mixins";
 
-/*! #{$project-name}.utils.css v#{$version} | MIT License | github.com/matthijskamstra/monkee-style */
+/*! #{$project-name}-abstract v#{$version} | MIT License | github.com/matthijskamstra/monkee-style */
 
-// layout containers
+// should be empty, beside "#{$project-name}" and this line
+@import "components/buttons";

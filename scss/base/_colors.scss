@@ -9,17 +9,26 @@
 
 /* color tints */
 
-$test-color: #32b643;
-@for $i from 0 through 10 {
-  $percentage: ($i * 10) * 1%;
-  /*! #{$i*100} */
-  @if $i == 0 {
-    .test-color {
-      color: $test-color;
-    }
-  } @else {
-    .test-color-#{$i*100} {
-      color: lighten($test-color, $percentage);
+@each $name, $color in $colors {
+  @for $i from 0 through 10 {
+    $percentage: ($i * 5) * 1%;
+    @if $i == 0 {
+      .bg-#{$name} {
+        background-color: $color;
+      }
+      .fill-#{$name} {
+        fill: $color;
+      }
+      .text-#{$name} {
+        color: $color;
+      }
+      .border-#{$name} {
+        border: 1px solid $color;
+      }
+    } @else {
+      .bg-#{$name}-#{1000-($i*100)} {
+        background-color: lighten($color, $percentage);
+      }
     }
   }
 }
