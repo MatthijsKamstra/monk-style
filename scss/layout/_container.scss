@@ -15,48 +15,69 @@
 
 //
 // md:container
+/**
+ * container from Bootstrap
+ */
+
+%container {
+	padding-right: $layout-padding;
+	padding-left: $layout-padding;
+	margin-right: auto;
+	margin-left: auto;
+}
 
 .container {
-	width: 100%;
-	padding-right: 1rem;
-	padding-left: 1rem;
-	margin-right: auto;
-	margin-left: auto;
-}
-.container-fluid {
-	width: 100%;
-	padding-right: 1rem;
-	padding-left: 1rem;
-	margin-right: auto;
-	margin-left: auto;
+	// padding-right: $layout-padding;
+	// padding-left: $layout-padding;
+	// margin-right: auto;
+	// margin-left: auto;
+	@extend %container;
 }
 
-// @debug map.get($container-max-widths, "md");
-/**
-tailwind ripoff: width in percentage with breakpoints
-*/
-@each $br, $value in $container-max-widths {
-	@include respond-above($br) {
-		/*! value: #{$value} */
-		/*! br: #{$br} */
+.container-fluid {
+	@extend %container;
+	width: 100%;
+}
+
+.no-gutters {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+// /**
+// tailwind ripoff: width in percentage with breakpoints
+// */
+@each $bp, $value in $container-max-widths {
+	.container-#{$bp},
+	.#{$bp}\:container {
+		width: 100%;
+		// width: #{$value};
+		// max-width: 100%;
+		@extend %container;
+	}
+
+	@include respond-above($bp) {
 		.container {
 			width: #{$value};
-			padding-right: 1rem;
-			padding-left: 1rem;
+			max-width: 100%;
+			padding-right: $layout-padding;
+			padding-left: $layout-padding;
 			margin-right: auto;
 			margin-left: auto;
 		}
-		.container-#{$br} {
+		.container-#{$bp} {
 			width: #{$value};
-			padding-right: 1rem;
-			padding-left: 1rem;
+			max-width: 100%;
+			padding-right: $layout-padding;
+			padding-left: $layout-padding;
 			margin-right: auto;
 			margin-left: auto;
 		}
-		.#{$br}\:container {
+		.#{$bp}\:container {
 			width: #{$value};
-			padding-right: 1rem;
-			padding-left: 1rem;
+			max-width: 100%;
+			padding-right: $layout-padding;
+			padding-left: $layout-padding;
 			margin-right: auto;
 			margin-left: auto;
 		}

@@ -52,3 +52,17 @@
 @function v($var) {
   @return var(--#{$var});
 }
+
+// https://www.kevinpowell.co/article/dynamic-text-color-with-sass/
+
+// @mixin dc($color) { // dc is short for dynamic color
+//   background: $color;
+//   color: text($color);
+// }
+@function text($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}

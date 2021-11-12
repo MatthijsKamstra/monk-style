@@ -7,6 +7,36 @@
 //    - SVG Strokes
 // */
 
+/* color tints */
+
+$test-color: #32b643;
+@for $i from 0 through 10 {
+  $percentage: ($i * 10) * 1%;
+  /*! #{$i*100} */
+  @if $i == 0 {
+    .test-color {
+      color: $test-color;
+    }
+  } @else {
+    .test-color-#{$i*100} {
+      color: lighten($test-color, $percentage);
+    }
+  }
+}
+
+// grays
+/**
+generate a gray pallets
+*/
+$test-color-gray: #000;
+@for $i from 1 through 9 {
+  $percentage: ($i * 10) * 1%;
+  /*! #{$i*10} */
+  .text-gray-#{1000-($i*100)} {
+    color: lighten($test-color-gray, $percentage);
+  }
+}
+
 /* backgrounds colors */
 @each $name, $color in $colors {
   .bg-#{$name} {

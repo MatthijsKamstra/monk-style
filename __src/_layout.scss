@@ -2,10 +2,10 @@
  * container from Bootstrap
  */
 .container {
-  margin-right: auto;
-  margin-left: auto;
   padding-right: $layout-padding;
   padding-left: $layout-padding;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .container-fluid {
@@ -19,40 +19,40 @@
 /* Extra small devices (phones, less than 768px) */
 @media (min-width: 576px) {
   .container {
-    padding-right: $layout-padding;
-    padding-left: $layout-padding;
     width: 540px;
     max-width: 100%;
+    padding-right: $layout-padding;
+    padding-left: $layout-padding;
   }
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .container {
-    padding-right: $layout-padding;
-    padding-left: $layout-padding;
     width: 720px;
     max-width: 100%;
+    padding-right: $layout-padding;
+    padding-left: $layout-padding;
   }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .container {
-    padding-right: $layout-padding;
-    padding-left: $layout-padding;
     width: 960px;
     max-width: 100%;
+    padding-right: $layout-padding;
+    padding-left: $layout-padding;
   }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .container {
-    padding-right: $layout-padding;
-    padding-left: $layout-padding;
     width: 1140px;
     max-width: 100%;
+    padding-right: $layout-padding;
+    padding-left: $layout-padding;
   }
 }
 

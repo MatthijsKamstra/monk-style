@@ -4,10 +4,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Monkee 🐵 - Library</title>
+	<title>Monkee 🐵 - Library - Container</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<!-- Source® Sans Pro, Adobe's first open source typeface family, was designed by Paul D. Hunt. -->
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap" rel="stylesheet" />
+	<!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap" rel="stylesheet" /> -->
 	<!-- Ficons, A Simple, Open-Source, Drop-In Alternative for Font Awesome Icons  -->
 	<link href="https://cdn.jsdelivr.net/npm/ficons@1.1.52/dist/ficons/font.css" rel="stylesheet" />
 	<!-- Link to monkee stylesheet here -->
@@ -15,12 +15,9 @@
 	<!-- style.css not really important, but it helps to visualize this page -->
 	<link rel="stylesheet" href="style.css" />
 	<style>
-		.row {
-			background-color: var(--purple);
-		}
-
-		.col,
-		[class^="col-"] {
+		.container-demo,
+		[class^="container-demo"] {
+			padding: 10px;
 			border: 1px solid var(--purple);
 			background-color: var(--orange);
 		}
@@ -39,29 +36,66 @@
 
 		<section class="container">
 			<h1>container.css</h1>
+			just a simple wrapper around your content
 		</section>
-
-
-		<div class="container">100% wide until small breakpoint</div>
-		<div class="container-sm">100% wide until small breakpoint</div>
-		<div class="container-md">100% wide until medium breakpoint</div>
-		<div class="container-lg">100% wide until large breakpoint</div>
-		<div class="container-xl">100% wide until extra large breakpoint</div>
-		<div class="container-xxl">100% wide until extra extra large breakpoint</div>
-		<div class="container-fluid">100% wide</div>
-
-
 
 		<section class="container">
-
-
+			<h2>Bootstrap examples</h2>
 		</section>
 
-		<footer class="container-fluid bg-black">
-			test
-		</footer>
+		<div class="container container-demo">
+			<span class="label">.container</span> 100% wide until small breakpoint
+		</div>
+		<div class="container-sm container-demo">
+			<span class="label">.container-sm</span>100% wide until small breakpoint
+		</div>
+		<div class="container-md container-demo">
+			<span class="label">.container-md</span>100% wide until medium breakpoint
+		</div>
+		<div class="container-lg container-demo">
+			<span class="label">.container-lg</span>100% wide until large breakpoint
+		</div>
+		<div class="container-xl container-demo">
+			<span class="label">.container-xl</span>100% wide until extra large breakpoint
+		</div>
+		<div class="container-xxl container-demo">
+			<span class="label">.container-xxl</span>100% wide until extra extra large breakpoint
+		</div>
+		<div class="container-fluid container-demo">
+			<span class="label">.container-fluid</span>100% wide
+		</div>
+
+		<section class="container">
+			<h2>Tailwind examples</h2>
+		</section>
+
+
+		<div class="sm:container container-demo">
+			<span class="label">.sm:container</span>100% wide until small breakpoint
+		</div>
+		<div class="md:container container-demo">
+			<span class="label">.md:container</span>100% wide until medium breakpoint
+		</div>
+		<div class="lg:container container-demo">
+			<span class="label">.lg:container</span>100% wide until large breakpoint
+		</div>
+		<div class="xl:container container-demo">
+			<span class="label">.xl:container</span>100% wide until extra large breakpoint
+		</div>
+		<div class="xxl:container container-demo">
+			<span class="label">.xxl:container</span>100% wide until extra extra large breakpoint
+		</div>
+
+
+
+
+
 
 	</main><!-- /.content-container -->
+
+	<footer class="container-fluid bg-black">
+		footer
+	</footer>
 
 	<!-- off-canvas navigation -->
 	<nav id="storage" class="slideout-sidebar" style="display:_none;"></nav>
